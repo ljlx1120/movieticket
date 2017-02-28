@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie Tickets</h1>
+      <form id="userInput">
+        <div class="form-group">
+          <select class="form-control" id="movie">
+            <option></option>
+            <option class="new-release">Die Hard 6</option>
+            <option class="new-release">Final Destination 12</option>
+            <option>Toy Story 13</option>
+            <option>Jaws 11</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select class="form-control" id="times">
+            <option></option>
+            <option class="discount">10 am</option>
+            <option class="discount">11 am</option>
+            <option>Noon</option>
+            <option>2 pm</option>
+            <option>3 pm</option>
+            <option>6 pm</option>
+            <option>9 pm</option>
+            <option class="discount">midnight</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select class="form-control" id="age">
+            <option></option>
+            <option class="child">Under 12</option>
+            <option class="student">Student</option>
+            <option class="senior">Senior Citizen</option>
+            <option class="military">Military</option>
+            <option class="adult">Adult</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <div>
+        <h2 id="result"></h2>
+        <h2 id="movieName"></h2>
+      </div>
+    </div>
+  </body>
+</html>
